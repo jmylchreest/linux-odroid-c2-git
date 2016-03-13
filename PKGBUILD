@@ -7,7 +7,7 @@ pkgbase=linux-odroid-c2-git
 _srcname=linux
 _kernelname=${pkgbase#linux}
 _desc="ODROID-C2"
-pkgver=r432624.a7ae544
+pkgver=r432631.ec5337d
 pkgrel=1
 arch=('aarch64')
 url="https://github.com/hardkernel/linux/tree/odroidc2-3.14.y"
@@ -25,7 +25,7 @@ md5sums=('SKIP'
          'SKIP'
          '1b8e6672f31b17d4f2f18b5991edae5e'
          '790ea64513d1b6e7497f8cecdb10780b'
-         '81c73be259a5b0285e17ebc8779665e5'
+         '5f5d96c688416460a4209fb64dc85fdf'
          '85fd3026c435ffa6d7c2d7f9767b4251'
          'b8956789318f49cec5b8bb0b41654a9b')
 
