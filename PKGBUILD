@@ -7,7 +7,7 @@ pkgbase=linux-odroid-c2-git
 _srcname=linux
 _kernelname=${pkgbase#linux}
 _desc="ODROID-C2"
-pkgver=r432631.ec5337d
+pkgver=r432802.db20506
 pkgrel=1
 arch=('aarch64')
 url="https://github.com/hardkernel/linux/tree/odroidc2-3.14.y"
@@ -50,7 +50,7 @@ build() {
 
   # load configuration
   # Configure the kernel. Replace the line below with one of your choice.
-  #make menuconfig # CLI menu for configuration
+  make menuconfig # CLI menu for configuration
   #make nconfig # new CLI menu for configuration
   #make xconfig # X-based configuration
   #make oldconfig # using old config from previous kernel version
