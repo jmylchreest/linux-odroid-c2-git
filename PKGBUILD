@@ -16,14 +16,12 @@ makedepends=('xmlto' 'docbook-xsl' 'kmod' 'inetutils' 'bc' 'git')
 options=('!strip')
 source=("git+https://github.com/hardkernel/linux.git#branch=odroidc2-3.14.y"
         "git+https://github.com/mdrjr/c2_bootini.git"
-        '0001-Bluetooth-allocate-static-minor-for-vhci.patch'
         '0002-KEYS-Fix-keyring-ref-leak-in-join_session_keyring.patch'
         'gitconfig'
         'linux.preset'
         'amlogic.service')
 md5sums=('SKIP'
          'SKIP'
-         '1b8e6672f31b17d4f2f18b5991edae5e'
          '790ea64513d1b6e7497f8cecdb10780b'
          '5f5d96c688416460a4209fb64dc85fdf'
          '85fd3026c435ffa6d7c2d7f9767b4251'
@@ -37,7 +35,6 @@ pkgver() {
 prepare() {
   cd "${srcdir}/${_srcname}"
 
-  git apply ../0001-Bluetooth-allocate-static-minor-for-vhci.patch
   git apply ../0002-KEYS-Fix-keyring-ref-leak-in-join_session_keyring.patch
 
   cat "${srcdir}/gitconfig" > ./.config
