@@ -7,7 +7,7 @@ pkgbase=linux-odroid-c2-git
 _srcname=linux
 _kernelname=${pkgbase#linux}
 _desc="ODROID-C2"
-pkgver=r432802.db20506
+pkgver=r435672.3b08361
 pkgrel=1
 arch=('aarch64')
 url="https://github.com/hardkernel/linux/tree/odroidc2-3.14.y"
@@ -21,7 +21,7 @@ source=("git+https://github.com/hardkernel/linux.git#branch=odroidc2-3.14.y"
         'amlogic.service')
 md5sums=('SKIP'
          'SKIP'
-         '5f5d96c688416460a4209fb64dc85fdf'
+         'SKIP'
          '85fd3026c435ffa6d7c2d7f9767b4251'
          'b8956789318f49cec5b8bb0b41654a9b')
 
